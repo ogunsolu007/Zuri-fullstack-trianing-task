@@ -13,20 +13,25 @@ import json
 def read_file_content(filename):
     # [assignment] Add your code here 
    filename = open(filename,"r")
-   text = filename.readlines()
+   text = filename.read()
    return text
 
 
 
 
-def count_words():
-    text = read_file_content("Python\Reading-Text-Files\story.txt")
-   
-    text_word = text[0].split()
-    result = json.loads(text_word)
-    
-    print(text)
-    
-    return {"as": 10, "would": 20}
+def count_words(filename):
+    text = read_file_content(filename)
+    dict = {}
 
-count_words()
+    text_words = str.split(text, " ")
+
+    for word in text_words:
+        if word in dict:
+            dict[word] += 1
+        else:
+            dict[word] = 1
+    return dict
+
+
+
+print(count_words("Python\Reading-Text-Files\story.txt"))
