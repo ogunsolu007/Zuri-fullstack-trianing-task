@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
+}
+.container {
+  width: 80%;
+  margin: 120px auto;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.text h1 {
+  font-size: 25px;
+}
+.text p {
+  line-height: 1.5;
+  width: 70%;
+}
+.attribution{
+    text-align: center;
+    color: white;
+}
+
+a{
+    color: aliceblue;
+}
+
+.p-box {
+  background-color: hsl(248, 32%, 49%);
+  padding: 12px;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.p-box span {
+  color: hsl(246, 25%, 77%);
+}
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+input {
+  width: 100%;
+  padding: 10px 8px;
+  margin-bottom: 10px;
+  outline: none;
+}
+input:focus {
+  border-color: hsl(246, 25%, 77%);
+  outline: none;
+  
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  background-color: hsl(154, 59%, 51%);
+  padding: 10px 8px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.p-footer {
+  color: hsl(246, 25%, 77%);
+  margin: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.p-footer span {
+  color: hsl(249, 10%, 26%);
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+  .text {
+    text-align: center;
+  }
+
+  .text h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .text p {
+    line-height: 1.5;
+    width: auto;
+    font-size: 16px;
+  }
+
+  .p-box {
+    padding:  20px;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+}
