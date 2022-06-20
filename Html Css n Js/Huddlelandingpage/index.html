@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <script
+      src="https://kit.fontawesome.com/9cb4d82a7a.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="icon"
       type="image/png"
@@ -97,13 +99,17 @@
       </section>
     </main>
     <footer>
-      <section class="section_last--card">
+      <div class="footer_container">
+         <section class="section_last--card">
         <h3>Ready To Build Your Community?</h3>
         <button class="btn">Get Started For Free</button>
       </section>
       <div class="footer">
-        <img src="./images/logo.svg" alt="logo" />
-
+        <img
+          src="./images/logo footer.svg"
+          alt="footerlogo"
+          class="footer_logo"
+        />
         <div class="footer_items">
           <div class="item">
             <div>
@@ -123,18 +129,29 @@
             </div>
           </div>
           <div class="item sub_item">
-            <p>About Us</p>
-            <p>What We Do</p>
-            <p>FAQ</p>
-            <p>Career</p>
-            <p>Blog</p>
-            <p>Contact Us</p>
+            <div class="sub_items">
+              <p>About Us</p>
+              <p>What We Do</p>
+              <p>FAQ</p>
+            </div>
+            <div class="sub_items">
+              <p>Career</p>
+              <p>Blog</p>
+              <p>Contact Us</p>
+            </div>
           </div>
-          <div class="item item_copy">
-            <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+          <div class="item sub_item-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
           </div>
         </div>
+        <p class="copyright">
+          &copy; Copyright 2018 Huddle. All rights reserved.
+        </p>
       </div>
+      </div>
+     
     </footer>
   </body>
 </html>
